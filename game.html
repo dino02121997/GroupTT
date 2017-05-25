@@ -1,0 +1,137 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>Nhóm T_T</title>
+    <link rel='stylesheet' id='bootstrap'  href='assets/bootstrap.min.css' type='text/css' media='all' />
+</head>
+<body onload = "main();" style="background-image: url('src/background.jpg');">
+<style type="text/css">
+    #game, #text{
+        left: 25%;
+    }
+
+    .header{
+        text-align: center;
+        border-top: 5px dashed white;
+    }
+    .header h1{
+        color: white;
+        font-size:30px;
+    }
+    .group-name{
+        color: red;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .class-name{
+        color: yellow;
+        font-size: 20px;
+        font-weight: both;
+    }
+    .guide{
+        position: absolute;
+        top: 300px;
+        width: 200px;
+        height: 500px;
+        left: 50px;
+        color: white;
+        font-size: 1.2em;
+    }
+    .rightbar{
+        position: absolute;
+        top: 300px;
+        right: 50px;
+        color: yellow;
+        font-size: 1.2em;
+    }
+    .nav-tabs li{
+        background: transparent;
+        float: none;
+        text-align: center!important;
+    }
+    .nav-tabs li a{
+        color: #ffffff;
+        font-size: 1.5em;
+    }
+    .nav-tabs li:hover a{
+        color: #000;
+    }
+    .nav-tabs li.active{
+        background: rgba(20,100,16,0.75);
+        border:none;
+    }
+    .nav-tabs li.active a{
+        background: rgba(20,100,16,0.75)!important;
+        border:none;
+        color: #000!important;
+    }
+    .tab-content{
+        text-align: center;
+    }
+    .tab-pane{
+        color: #fff;
+        font-size:1.2em;
+    }
+</style>
+<div class="header">
+			<span style="font-family: 'Times New Roman',serif">
+				<h1>ĐỒ ÁN MÔN HỌC<br>ĐỒ HỌA MÁY TÍNH VÀ XỬ LÝ ẢNH<h1>
+                <strong>
+				<p class="group-name">Nhóm T_T</p>
+				<p class="class-name">Lớp: KHTN2015</p>
+                </strong>
+			</span>
+</div>
+<div>
+
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs" role="tablist">
+        <li role="presentation" class="btn-menu-item"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Chơi game</a></li>
+        <li role="presentation" class="btn-menu-item"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Cách chơi</a></li>
+        <li role="presentation" class="btn-menu-item"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Giới thiệu nhóm</a></li>
+    </ul>
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+        <div role="tabpanel" class="tab-pane" id="home">
+            <canvas id = "game" width = "800" height = "600" style = "position: absolute; z-index: 0"></canvas>
+            <canvas id = "text" width = "800" height = "600" style = "position: absolute; z-index: 1 " ></canvas>
+        </div>
+        <div role="tabpanel" class="tab-pane" id="profile">
+        	<p>Sử dụng phím mũi tên LÊN, XUỐNG, TRÁI, PHẢI để di chuyển trái banh.</p>
+        	<p>Sử dụng phím A, W, S, D, PgUp, PgDn để chỉnh hướng camera.</p>
+            <p>Nhất bất kỳ một phím nào trên bàn phím để bắt đầu trò chơi. </p>
+            <p>Để tạm dừng trò chơi, nhấn phím Esc.</p>
+            <p>Phím Space dùng để trở về menu.</p>
+            <h3>LƯU Ý: BẠN CHỈ CÓ 3 PHÚT ĐỂ LOẠI BỎ TẤT CẢ CÁC CHƯỚNG NGẠI VẬT </h3>
+            <br>
+            <hr/>
+            <strong>
+            <p>Nhấn phím space để quay lại menu</p>
+            </strong>
+        </div>
+        <div role="tabpanel" class="tab-pane" id="messages">
+            <hr/>
+            <p>Nhóm gồm 2 thành viên: </p>
+            <strong>
+            <p> 15520975 TRẦN ANH TUẤN</p>
+            <p> 15520996 TẠ TỶ TỶ </p>
+            </strong>
+            <hr/>
+            <strong>
+            <p>Nhấn phím space để quay lại menu</p>
+            </strong>
+        </div>
+
+        <script type="text/javascript" src = "assets/jquery.min.js"></script>
+        <script type="text/javascript" src = "assets/wind.js"></script>
+
+        <script type="text/javascript" src = "assets/bootstrap.min.js"></script>
+
+        <script type="text/javascript" src = "src/shader.js"></script>
+        <script type="text/javascript" src = "lib/glMatrix-0.9.5.min.js"></script>
+        <script type="text/javascript" src = "lib/webgl-utils.js"></script>
+
+        <script type="text/javascript" src = "index.js"></script>
+    </body>
+</html>
